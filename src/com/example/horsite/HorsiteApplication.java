@@ -111,14 +111,13 @@ public class HorsiteApplication extends Application {
 		
 		con = rCon;
 	}
-	AnimatorProxy webAnimator = new AnimatorProxy();
+
 	@Override
 	public void init() {
 		setTheme("chameleon-violet");
 		fillContents();
 		mainWindow = new Window();
 		VerticalLayout mainLayout = new MainLayout();
-		mainWindow.addComponent(webAnimator);
 		mainWindow.addComponent(mainLayout);
 		setMainWindow(mainWindow);
 	}

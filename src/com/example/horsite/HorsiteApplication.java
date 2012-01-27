@@ -1,15 +1,8 @@
 package com.example.horsite;
 
-import org.vaadin.jouni.animator.Animator;
-import org.vaadin.jouni.animator.AnimatorProxy;
-import org.vaadin.jouni.animator.client.ui.VAnimatorProxy.AnimType;
-
 import com.vaadin.Application;
 import com.vaadin.addon.chameleon.ChameleonTheme;
-import com.vaadin.terminal.ApplicationResource;
-import com.vaadin.terminal.ClassResource;
 import com.vaadin.terminal.ExternalResource;
-import com.vaadin.terminal.Resource;
 import com.vaadin.terminal.ThemeResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
@@ -54,7 +47,6 @@ public class HorsiteApplication extends Application {
 	Application thisApp = this;
 	Window mainWindow;
 	
-	@SuppressWarnings("deprecation")
 	private void fillContents(){
 		
 		rCon.langugeBarLabel = "Change language to:";
@@ -252,7 +244,7 @@ public class HorsiteApplication extends Application {
 	
 	final VerticalLayout prjLayout = new VerticalLayout();
 	
-	final HorizontalLayout prjAtelLayuot = fillAtelLayout();
+	HorizontalLayout prjAtelLayuot = fillAtelLayout();
 	HorizontalLayout prjTayraLayuot = fillTayraLayout();
 	//HorizontalLayout prjDekoLayout = fillDekoLayout();
 	final HorizontalLayout prjWebLayout = new HorizontalLayout();

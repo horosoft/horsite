@@ -1,5 +1,7 @@
 package com.example.horsite;
 
+import java.net.URL;
+
 import com.vaadin.Application;
 import com.vaadin.addon.chameleon.ChameleonTheme;
 import com.vaadin.terminal.ExternalResource;
@@ -14,6 +16,7 @@ public class HorsiteApplication extends Application {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	String AtelImage = "img/rdatenet.png";
 
 
 	abstract class content{
@@ -30,6 +33,7 @@ public class HorsiteApplication extends Application {
 		String aboutLabel;
 		String projectLabelAtel;
 		String projectLabelTayra;
+		String projectLabelRdate;
 		String cvLabel;
 		String contactsLabel;
 	}
@@ -74,10 +78,12 @@ public class HorsiteApplication extends Application {
 		eCon.underConstractionLabel = "Page under conctruction";
 		rCon.aboutLabel = "<p>Наша развивающаяся компания занимается разработкой в следующих направлениях:<br><ul type=\"disc\"> <li>Разработка приложений<ul type=\"circle\"><li>Бизнес приложения</li><li>Веб приложения</li><li>Мобильные приложения</li><li>Параллельные приложения</li><li>Приложения в научной сфере</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Веб разработка<ul type=\"circle\"><li>Сайты-визитки</li><li>Интернет порталы</li><li>Интернет магазины</li><li>Корпоративные сайты</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Обслуживание и продвижение сайтов<ul type=\"circle\"><li>SEO</li><li>SMO</li><li>Яндекс.Директ</li><li>Google AdWords</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Абонентское обслуживание организаций<ul type=\"circle\"><li>Удаленное министрирование</li><li>Выездное администрирование</li><li>Проектирование и реализация сети</li><li>Подбор оборудования</li><li>и др</li></ul></li></ul><br>Проекты выполненные в рамках нашей компании можно найти в разделе «Наши проекты»</p><p>Компания имеет постоянно пополняющийся штат опытных сотрудников, каждый из которых стремится к развитию в данной сфере. Проекты и навыки наших сотрудников можно найти в соответствующем разделе.</p><p>Применение индивидуального подхода к проектам позволяет нам улучшить качество производимой продукции и уменьшить сроки разработки. По вопросам разработки можно связаться с нами по e-mail или любому другому удобному вам виду связи которые перечислины в разделе «Контакты».</p>";
 		eCon.aboutLabel = "<p>Our company can offer you high quality development service, such as:<br><ul type=\"disc\"><li>Software development<ul type=\"circle\"><li>Business software</li><li>Web applications</li><li>Mobile applications</li><li>Parallel applications</li><li>Scientific applications</li><li>etc</li></ul></li></ul><ul type=\"disc\"><li>Web<ul type=\"circle\"><li>Promo websites</li><li>Internet portals</li><li>Internet shops</li><li>Corporate websites</li><li>etc</li></ul></li></ul><ul type=\"disc\"> <li>Website promotion and maintenance<ul type=\"circle\"><li>SEO</li><li>SMO</li><li>Yandex.Direct</li><li>Google AdWords</li><li>etc</li></ul></li></ul><ul type=\"disc\"> <li>Remote support outsource<ul type=\"circle\"><li>Windows Servers</li><li>*nix servers</li><li>VOIP servers</li><li>Mail Servers</li><li>etc</li></ul></li></ul><br>You can find projects made by our company under the «Projects» tab</p><p>Our company has growing number of experienced employees. Each of them makes progress in his skills every day and every project he works on. You can find list of s kills and  third-party procjects of our employees under the «Developers» tab.</p><p>We use individual approach to every project. And it allows us to increase quality and decrease time spent on project development. Feel free to contact us with any question. You can find email and other contacts on the «Contacts» tab.</p>";
-		rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Корпоративный сайт для компании поставщика кабельного оборудования<br>&nbsp;&nbsp;&nbsp;&nbsp;ООО «Адвател»</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции</li><li>Новости</li></ul>";
-		eCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Corporate website for novosibirsk cable company<br>&nbsp;&nbsp;&nbsp;&nbsp;«Advatel» LLC</p> &nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog</li><li>News</li></ul>";
+		//rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Корпоративный сайт для компании поставщика кабельного оборудования<br>&nbsp;&nbsp;&nbsp;&nbsp;ООО «Адвател»</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции</li><li>Новости</li></ul>";
+		//eCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Corporate website for novosibirsk cable company<br>&nbsp;&nbsp;&nbsp;&nbsp;«Advatel» LLC</p> &nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog</li><li>News</li></ul>";
 		rCon.projectLabelTayra = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Приложение по подбору вентиляторов под помещение для ООО НЭМЗ «Тайра»</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции<ul type=\"circle\"><li>Графики характеристик вентилятора</li><li>Конвертация в doc формат</li></ul></li><li>Режим подбора<ul type=\"circle\"><li>Алгоритм подбора</li><li>Графический режим</li></ul></li></ul></p>";
 		eCon.projectLabelTayra = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Application for fan selection depending on building written for  NEMP «Tayra» LLC</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog<ul type=\"circle\"><li>Fan characteristic graphs</li><li>Convertation to MS .doc foramt </li></ul></li><li>Selection<ul type=\"circle\"><li>Selection algorythm</li><li>Graphic mode</li></ul></li></ul></p>";
+		rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Веб сервис напоминание о выходе яильма на DVD или в кино<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>База фильмов</li><li>Регистрация</li><li>Уведомление по email</li></ul>";
+		eCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Web service for notiifying about upcoming movie releases<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;includes:<ul><li>Movie database</li><li>Registration</li><li>Email notification</li></ul>";
 		ThemeResource nasonovimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/nasonov1.png");
 		ThemeResource mikerinimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/mikerin.png");
 		ThemeResource nikolaevimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/nikolaev.png");
@@ -129,6 +135,7 @@ public class HorsiteApplication extends Application {
 		 * 
 		 */
 		private static final long serialVersionUID = 1L;
+	String AtelSite = "http://releasedateof.net";
 
 	public MainLayout() {
 	initComponents();
@@ -158,6 +165,7 @@ public class HorsiteApplication extends Application {
 	private Label underConstractionLbl;
 	private Label aboutLbl;
 	private Label projectLblAtel;
+	//private Label projectLblRdate;
 	private Label projectLblTayra;
 	private Label cvLbl;
 	private Label contactsLbl;
@@ -166,7 +174,7 @@ public class HorsiteApplication extends Application {
 		HorizontalLayout prjAtelLayuot = new HorizontalLayout();
 		prjAtelLayuot.setMargin(true);
 		Button buttonAtelImg = new Button();
-		ThemeResource atelImageRes = new ThemeResource("img/a2tel.png");
+		ThemeResource atelImageRes = new ThemeResource(AtelImage);
 		buttonAtelImg.setIcon(atelImageRes);
 		buttonAtelImg.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);
 		buttonAtelImg.addListener(new Button.ClickListener() {
@@ -177,54 +185,48 @@ public class HorsiteApplication extends Application {
 
 			@Override
 			public void buttonClick(ClickEvent event) {
-			mainWindow.open(new ExternalResource("http://a2tel.ru/?q=prod_krone"), "_blank");
+			mainWindow.open(new ExternalResource(AtelSite));
 			}
 			});
 		
 		prjAtelLayuot.addComponent(buttonAtelImg);
 		prjAtelLayuot.setComponentAlignment(buttonAtelImg, Alignment.MIDDLE_LEFT);
-		prjAtelLayuot.addComponent(projectLblAtel);
-		prjAtelLayuot.setComponentAlignment(projectLblAtel, Alignment.TOP_LEFT);
 		return prjAtelLayuot;
 	}
 	
-	HorizontalLayout fillDekoLayout(){
-		HorizontalLayout prjDekoLayuot = new HorizontalLayout();
-		prjDekoLayuot.setMargin(true);
-		Button buttonDekoImg = new Button();
-		ThemeResource dekoImageRes = new ThemeResource("img/deko.png");
-		buttonDekoImg.setIcon(dekoImageRes);
-		buttonDekoImg.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);
-		buttonDekoImg.addListener(new Button.ClickListener() {
-			/**
-			 * 
-			 */
+	/*HorizontalLayout fillRdateLayout(){
+		HorizontalLayout prjRdateLayuot = new HorizontalLayout();
+		prjRdateLayuot.setMargin(true);
+		Button buttonRdateImg = new Button();
+		ThemeResource dekoImageRes = new ThemeResource("img/rdatenet.png");
+		buttonRdateImg.setIcon(dekoImageRes);
+		buttonRdateImg.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);
+		buttonRdateImg.addListener(new Button.ClickListener() {
+			
 			private static final long serialVersionUID = 1L;
 
 			@Override
 			public void buttonClick(ClickEvent event) {
-			mainWindow.open(new ExternalResource("http://a2tel.ru/?q=prod_krone"), "_blank");
+			mainWindow.open(new ExternalResource("http://releasedateof.net"), "_blank");
 			}
 			});
 		
-		prjDekoLayuot.addComponent(buttonDekoImg);
-		prjDekoLayuot.setComponentAlignment(buttonDekoImg, Alignment.MIDDLE_LEFT);
-		prjDekoLayuot.addComponent(projectLblAtel);
-		prjDekoLayuot.setComponentAlignment(projectLblAtel, Alignment.TOP_LEFT);
-		return prjDekoLayuot;
+		prjRdateLayuot.addComponent(buttonRdateImg);
+		prjRdateLayuot.setComponentAlignment(buttonRdateImg, Alignment.MIDDLE_LEFT);
+		prjRdateLayuot.addComponent(projectLblRdate);
+		prjRdateLayuot.setComponentAlignment(projectLblRdate, Alignment.TOP_LEFT);
+		return prjRdateLayuot;
 	}
-	
+	*/
 	HorizontalLayout fillTayraLayout(){
 		HorizontalLayout prjTayraLayuot = new HorizontalLayout();
 		prjTayraLayuot.setMargin(true);
 		Button buttonTayraImg = new Button();
-		ThemeResource tayraImageRes = new ThemeResource("img/tayra.png");
+		ThemeResource tayraImageRes = new ThemeResource("img/tayra-screen.png");
 		buttonTayraImg.setIcon(tayraImageRes);
 		buttonTayraImg.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);
 		prjTayraLayuot.addComponent(buttonTayraImg);
 		prjTayraLayuot.setComponentAlignment(buttonTayraImg, Alignment.MIDDLE_LEFT);
-		prjTayraLayuot.addComponent(projectLblTayra);
-		prjTayraLayuot.setComponentAlignment(projectLblTayra, Alignment.TOP_LEFT);
 		return prjTayraLayuot;
 	}
 
@@ -245,24 +247,92 @@ public class HorsiteApplication extends Application {
 	
 	HorizontalLayout prjAtelLayuot = fillAtelLayout();
 	HorizontalLayout prjTayraLayuot = fillTayraLayout();
-	//HorizontalLayout prjDekoLayout = fillDekoLayout();
+	
 	final HorizontalLayout prjWebLayout = new HorizontalLayout();
-	/*Button webLeft = new Button("<-");
+	final HorizontalLayout prjAppLayout = new HorizontalLayout();
+	final Button webLeft = new Button();
+	webLeft.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);	
+	ThemeResource webleftImageRes = new ThemeResource("img/webleft.png");
+	webLeft.setIcon(webleftImageRes);
+	webLeft.setEnabled(false);
+	final Button webRight = new Button();
+	webRight.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);
+	ThemeResource webrightImageRes = new ThemeResource("img/webright.png");
+	webRight.setIcon(webrightImageRes);
+	final Button appLeft = new Button();
+	appLeft.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);	
+	ThemeResource appleftImageRes = new ThemeResource("img/webleft.png");
+	appLeft.setIcon(appleftImageRes);
+	webLeft.setEnabled(false);
+	final Button appRight = new Button();
+	appRight.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);
+	ThemeResource apprightImageRes = new ThemeResource("img/webright.png");
+	appRight.setIcon(apprightImageRes);
+	appLeft.setEnabled(false);
+	appRight.setEnabled(false);
 	webLeft.addListener(new Button.ClickListener() {
 		@Override
 		public void buttonClick(ClickEvent event) {
-		webAnimator.animate(prjAtelLayuot, AnimType.ROLL_LEFT_CLOSE).setDuration(1000);
-		webAnimator.animate(prjAtelLayuot, AnimType.ROLL_RIGHT_OPEN).setDuration(1000).setDelay(1000);
+			rCon.projectLabelAtel="<p>&nbsp;&nbsp;&nbsp;&nbsp;Веб сервис напоминание о выходе яильма на DVD или в кино<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>База фильмов</li><li>Регистрация</li><li>Уведомление по email</li></ul>";
+			eCon.projectLabelAtel="<p>&nbsp;&nbsp;&nbsp;&nbsp;Web service for notiifying about upcoming movie releases<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;includes:<ul><li>Movie database</li><li>Registration</li><li>Email notification</li></ul>";
+			AtelSite="http://releasedateof.net";
+			AtelImage="img/rdatenet.png";
+			webLeft.setEnabled(false);
+			webRight.setEnabled(true);
+			prjWebLayout.removeAllComponents();
+			HorizontalLayout prjAtelLayuot = fillAtelLayout();
+			prjWebLayout.addComponent(webLeft);
+			prjWebLayout.setComponentAlignment(webLeft, Alignment.MIDDLE_LEFT);
+			prjWebLayout.addComponent(prjAtelLayuot);
+			prjWebLayout.setComponentAlignment(prjAtelLayuot, Alignment.MIDDLE_LEFT);
+			prjWebLayout.addComponent(webRight);
+			prjWebLayout.setComponentAlignment(webRight, Alignment.MIDDLE_LEFT);
+			prjWebLayout.addComponent(projectLblAtel);
+			prjWebLayout.setComponentAlignment(projectLblAtel, Alignment.TOP_LEFT);
+			updateLabels();
 		}
-		});*/
+		});
+	webRight.addListener(new Button.ClickListener() {
+		@Override
+		public void buttonClick(ClickEvent event) {
+			rCon.projectLabelAtel="<p>&nbsp;&nbsp;&nbsp;&nbsp;Корпоративный сайт для компании поставщика кабельного оборудования<br>&nbsp;&nbsp;&nbsp;&nbsp;ООО «Адвател»</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции</li><li>Новости</li></ul>";
+			eCon.projectLabelAtel="<p>&nbsp;&nbsp;&nbsp;&nbsp;Corporate website for novosibirsk cable company<br>&nbsp;&nbsp;&nbsp;&nbsp;«Advatel» LLC</p> &nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog</li><li>News</li></ul>";
+			AtelSite="http://a2tel.ru/?q=prod_krone";
+			AtelImage="img/a2tel.png";
+			webLeft.setEnabled(true);
+			webRight.setEnabled(false);
+			prjWebLayout.removeAllComponents();
+			HorizontalLayout prjAtelLayuot = fillAtelLayout();
+			prjWebLayout.addComponent(webLeft);
+			prjWebLayout.setComponentAlignment(webLeft, Alignment.MIDDLE_LEFT);
+			prjWebLayout.addComponent(prjAtelLayuot);
+			prjWebLayout.setComponentAlignment(prjAtelLayuot, Alignment.MIDDLE_LEFT);
+			prjWebLayout.addComponent(webRight);
+			prjWebLayout.setComponentAlignment(webRight, Alignment.MIDDLE_LEFT);
+			prjWebLayout.addComponent(projectLblAtel);
+			prjWebLayout.setComponentAlignment(projectLblAtel, Alignment.TOP_LEFT);
+			updateLabels();
+		}
+		});
 	
-	
-	//prjWebLayout.addComponent(webLeft);
-	//prjWebLayout.setComponentAlignment(webLeft, Alignment.MIDDLE_LEFT);
+	prjWebLayout.addComponent(webLeft);
+	prjWebLayout.setComponentAlignment(webLeft, Alignment.MIDDLE_LEFT);
 	prjWebLayout.addComponent(prjAtelLayuot);
 	prjWebLayout.setComponentAlignment(prjAtelLayuot, Alignment.MIDDLE_LEFT);
+	prjWebLayout.addComponent(webRight);
+	prjWebLayout.setComponentAlignment(webRight, Alignment.MIDDLE_LEFT);
+	prjWebLayout.addComponent(projectLblAtel);
+	prjWebLayout.setComponentAlignment(projectLblAtel, Alignment.TOP_LEFT);
 	prjLayout.addComponent(prjWebLayout);
-	prjLayout.addComponent(prjTayraLayuot);
+	prjAppLayout.addComponent(appLeft);
+	prjAppLayout.setComponentAlignment(appLeft, Alignment.MIDDLE_LEFT);
+	prjAppLayout.addComponent(prjTayraLayuot);
+	prjAppLayout.setComponentAlignment(prjTayraLayuot, Alignment.MIDDLE_LEFT);
+	prjAppLayout.addComponent(appRight);
+	prjAppLayout.setComponentAlignment(appRight, Alignment.MIDDLE_LEFT);
+	prjAppLayout.addComponent(projectLblTayra);
+	prjAppLayout.setComponentAlignment(projectLblTayra, Alignment.TOP_LEFT);
+	prjLayout.addComponent(prjAppLayout);
 	
 	cvLbl = new Label("", Label.CONTENT_XHTML);
 	contactsLbl = new Label("", Label.CONTENT_XHTML);
@@ -454,6 +524,7 @@ public class HorsiteApplication extends Application {
 		underConstractionLbl.setValue(con.underConstractionLabel);
 		aboutLbl.setValue(con.aboutLabel);
 		projectLblAtel.setValue(con.projectLabelAtel);
+		//projectLblRdate.setValue(con.projectLabelRdate);
 		projectLblTayra.setValue(con.projectLabelTayra);
 		cvLbl.setValue(con.cvLabel);
 		contactsLbl.setValue(con.contactsLabel);

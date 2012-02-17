@@ -2,30 +2,30 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>horsite</display-name>
   <context-param>
-  	<description>
+    <description>
   	Vaadin production mode</description>
-  	<param-name>productionMode</param-name>
-  	<param-value>false</param-value>
+    <param-name>productionMode</param-name>
+    <param-value>false</param-value>
   </context-param>
   <servlet>
-  	<servlet-name>Horsite Application</servlet-name>
-  	<servlet-class>com.vaadin.terminal.gwt.server.ApplicationServlet</servlet-class>
-  	<init-param>
-  		<description>
+    <servlet-name>Horsite Application</servlet-name>
+    <servlet-class>com.example.horsite.HorsiteApplicationServlet</servlet-class>
+    <init-param>
+      <description>
   		Vaadin application class to start</description>
-  		<param-name>application</param-name>
-  		<param-value>com.example.horsite.HorsiteApplication</param-value>
-  	</init-param>
-  	<init-param>
-  		<description>
+      <param-name>application</param-name>
+      <param-value>com.example.horsite.HorsiteApplication</param-value>
+    </init-param>
+    <init-param>
+      <description>
   		Application widgetset</description>
-  		<param-name>widgetset</param-name>
-  		<param-value>com.example.horsite.widgetset.HorsiteWidgetset</param-value>
-  	</init-param>
+      <param-name>widgetset</param-name>
+      <param-value>com.example.horsite.widgetset.HorsiteWidgetset</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>Horsite Application</servlet-name>
-  	<url-pattern>/*</url-pattern>
+    <servlet-name>Horsite Application</servlet-name>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -35,4 +35,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HorsiteApplicationServlet</display-name>
+    <servlet-name>HorsiteApplicationServlet</servlet-name>
+    <servlet-class>com.example.horsite.HorsiteApplicationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HorsiteApplicationServlet</servlet-name>
+    <url-pattern>/HorsiteApplication</url-pattern>
+  </servlet-mapping>
 </web-app>

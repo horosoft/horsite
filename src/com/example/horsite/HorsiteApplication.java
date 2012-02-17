@@ -1,7 +1,5 @@
 package com.example.horsite;
 
-import java.net.URL;
-
 import com.vaadin.Application;
 import com.vaadin.addon.chameleon.ChameleonTheme;
 import com.vaadin.terminal.ExternalResource;
@@ -11,10 +9,11 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.UriFragmentUtility.FragmentChangedEvent;
 import com.vaadin.ui.UriFragmentUtility.FragmentChangedListener;
 
+
 public class HorsiteApplication extends Application {
 	/**
 	 * 
-	 */
+	 */	
 	private static final long serialVersionUID = 1L;
 	String AtelImage = "img/rdatenet.png";
 
@@ -80,9 +79,9 @@ public class HorsiteApplication extends Application {
 		eCon.aboutLabel = "<p>Our company can offer you high quality development service, such as:<br><ul type=\"disc\"><li>Software development<ul type=\"circle\"><li>Business software</li><li>Web applications</li><li>Mobile applications</li><li>Parallel applications</li><li>Scientific applications</li><li>etc</li></ul></li></ul><ul type=\"disc\"><li>Web<ul type=\"circle\"><li>Promo websites</li><li>Internet portals</li><li>Internet shops</li><li>Corporate websites</li><li>etc</li></ul></li></ul><ul type=\"disc\"> <li>Website promotion and maintenance<ul type=\"circle\"><li>SEO</li><li>SMO</li><li>Yandex.Direct</li><li>Google AdWords</li><li>etc</li></ul></li></ul><ul type=\"disc\"> <li>Remote support outsource<ul type=\"circle\"><li>Windows Servers</li><li>*nix servers</li><li>VOIP servers</li><li>Mail Servers</li><li>etc</li></ul></li></ul><br>You can find projects made by our company under the «Projects» tab</p><p>Our company has growing number of experienced employees. Each of them makes progress in his skills every day and every project he works on. You can find list of s kills and  third-party procjects of our employees under the «Developers» tab.</p><p>We use individual approach to every project. And it allows us to increase quality and decrease time spent on project development. Feel free to contact us with any question. You can find email and other contacts on the «Contacts» tab.</p>";
 		//rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Корпоративный сайт для компании поставщика кабельного оборудования<br>&nbsp;&nbsp;&nbsp;&nbsp;ООО «Адвател»</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции</li><li>Новости</li></ul>";
 		//eCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Corporate website for novosibirsk cable company<br>&nbsp;&nbsp;&nbsp;&nbsp;«Advatel» LLC</p> &nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog</li><li>News</li></ul>";
-		rCon.projectLabelTayra = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Приложение по подбору вентиляторов под помещение для ООО НЭМЗ «Тайра»</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции<ul type=\"circle\"><li>Графики характеристик вентилятора</li><li>Конвертация в doc формат</li></ul></li><li>Режим подбора<ul type=\"circle\"><li>Алгоритм подбора</li><li>Графический режим</li></ul></li></ul></p>";
-		eCon.projectLabelTayra = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Application for fan selection depending on building written for  NEMP «Tayra» LLC</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog<ul type=\"circle\"><li>Fan characteristic graphs</li><li>Convertation to MS .doc foramt </li></ul></li><li>Selection<ul type=\"circle\"><li>Selection algorythm</li><li>Graphic mode</li></ul></li></ul></p>";
-		rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Веб сервис напоминание о выходе яильма на DVD или в кино<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>База фильмов</li><li>Регистрация</li><li>Уведомление по email</li></ul>";
+		rCon.projectLabelTayra = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Приложение по подбору вентиляторов под помещение для<br>&nbsp;&nbsp;&nbsp;&nbsp; ООО НЭМЗ «Тайра»</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции<ul type=\"circle\"><li>Графики характеристик вентилятора</li><li>Конвертация в doc формат</li></ul></li><li>Режим подбора<ul type=\"circle\"><li>Алгоритм подбора</li><li>Графический режим</li></ul></li></ul></p>";
+		eCon.projectLabelTayra = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Application for fan selection depending on building written for<br>&nbsp;&nbsp;&nbsp;&nbsp;  NEMP «Tayra» LLC</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog<ul type=\"circle\"><li>Fan characteristic graphs</li><li>Convertation to MS .doc foramt </li></ul></li><li>Selection<ul type=\"circle\"><li>Selection algorythm</li><li>Graphic mode</li></ul></li></ul></p>";
+		rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Веб сервис напоминание о выходе фильма на DVD или в кино<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>База фильмов</li><li>Регистрация</li><li>Уведомление по email</li></ul>";
 		eCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Web service for notiifying about upcoming movie releases<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;includes:<ul><li>Movie database</li><li>Registration</li><li>Email notification</li></ul>";
 		ThemeResource nasonovimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/nasonov1.png");
 		ThemeResource mikerinimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/mikerin.png");
@@ -239,7 +238,7 @@ public class HorsiteApplication extends Application {
 	aboutLbl = new Label("", Label.CONTENT_XHTML);
 	
 	projectLblAtel = new Label("", Label.CONTENT_XHTML);
-	projectLblAtel.setWidth("580");
+	projectLblAtel.setWidth("540");
 	projectLblTayra = new Label("", Label.CONTENT_XHTML);
 	projectLblTayra.setWidth("580");
 	
@@ -533,3 +532,4 @@ public class HorsiteApplication extends Application {
 	}
 
 }
+

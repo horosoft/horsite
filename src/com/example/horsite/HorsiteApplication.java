@@ -15,7 +15,7 @@ public class HorsiteApplication extends Application {
 	 * 
 	 */	
 	private static final long serialVersionUID = 1L;
-	String AtelImage = "img/rdatenet.png";
+	String AtelImage = "img/reldatenet.png";
 
 
 	abstract class content{
@@ -83,7 +83,7 @@ public class HorsiteApplication extends Application {
 		eCon.projectLabelTayra = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Application for fan selection depending on building written for<br>&nbsp;&nbsp;&nbsp;&nbsp;  NEMP «Tayra» LLC</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog<ul type=\"circle\"><li>Fan characteristic graphs</li><li>Convertation to MS .doc foramt </li></ul></li><li>Selection<ul type=\"circle\"><li>Selection algorythm</li><li>Graphic mode</li></ul></li></ul></p>";
 		rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Веб сервис напоминание о выходе фильма на DVD или в кино<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>База фильмов</li><li>Регистрация</li><li>Уведомление по email</li></ul>";
 		eCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Web service for notiifying about upcoming movie releases<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;includes:<ul><li>Movie database</li><li>Registration</li><li>Email notification</li></ul>";
-		ThemeResource nasonovimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/nasonov1.png");
+		ThemeResource nasonovimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/nasonov.png");
 		ThemeResource mikerinimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/mikerin.png");
 		ThemeResource nikolaevimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/nikolaev.png");
 		ThemeResource khrapovimage = new ThemeResource("VAADIN/themes/chameleon-violet/img/khrapov.png");
@@ -197,7 +197,7 @@ public class HorsiteApplication extends Application {
 		HorizontalLayout prjRdateLayuot = new HorizontalLayout();
 		prjRdateLayuot.setMargin(true);
 		Button buttonRdateImg = new Button();
-		ThemeResource dekoImageRes = new ThemeResource("img/rdatenet.png");
+		ThemeResource dekoImageRes = new ThemeResource("img/reldatenet.png");
 		buttonRdateImg.setIcon(dekoImageRes);
 		buttonRdateImg.setStyleName(ChameleonTheme.BUTTON_BORDERLESS);
 		buttonRdateImg.addListener(new Button.ClickListener() {
@@ -275,7 +275,7 @@ public class HorsiteApplication extends Application {
 			rCon.projectLabelAtel="<p>&nbsp;&nbsp;&nbsp;&nbsp;Веб сервис напоминание о выходе яильма на DVD или в кино<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>База фильмов</li><li>Регистрация</li><li>Уведомление по email</li></ul>";
 			eCon.projectLabelAtel="<p>&nbsp;&nbsp;&nbsp;&nbsp;Web service for notiifying about upcoming movie releases<br>&nbsp;&nbsp;&nbsp;&nbsp;Release Date Of.Net</p> &nbsp;&nbsp;&nbsp;&nbsp;includes:<ul><li>Movie database</li><li>Registration</li><li>Email notification</li></ul>";
 			AtelSite="http://releasedateof.net";
-			AtelImage="img/rdatenet.png";
+			AtelImage="img/reldatenet.png";
 			webLeft.setEnabled(false);
 			webRight.setEnabled(true);
 			prjWebLayout.removeAllComponents();

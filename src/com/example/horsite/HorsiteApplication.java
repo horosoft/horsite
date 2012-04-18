@@ -75,7 +75,7 @@ public class HorsiteApplication extends Application {
 		
 		rCon.underConstractionLabel = "Страница находится в разработке";
 		eCon.underConstractionLabel = "Page under conctruction";
-		rCon.aboutLabel = "<p>Наша развивающаяся компания занимается разработкой в следующих направлениях:<br><ul type=\"disc\"> <li>Разработка приложений<ul type=\"circle\"><li>Бизнес приложения</li><li>Веб приложения</li><li>Мобильные приложения</li><li>Параллельные приложения</li><li>Приложения в научной сфере</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Веб разработка<ul type=\"circle\"><li>Сайты-визитки</li><li>Интернет порталы</li><li>Интернет магазины</li><li>Корпоративные сайты</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Обслуживание и продвижение сайтов<ul type=\"circle\"><li>SEO</li><li>SMO</li><li>Яндекс.Директ</li><li>Google AdWords</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Абонентское обслуживание организаций<ul type=\"circle\"><li>Удаленное министрирование</li><li>Выездное администрирование</li><li>Проектирование и реализация сети</li><li>Подбор оборудования</li><li>и др</li></ul></li></ul><br>Проекты выполненные в рамках нашей компании можно найти в разделе «Наши проекты»</p><p>Компания имеет постоянно пополняющийся штат опытных сотрудников, каждый из которых стремится к развитию в данной сфере. Проекты и навыки наших сотрудников можно найти в соответствующем разделе.</p><p>Применение индивидуального подхода к проектам позволяет нам улучшить качество производимой продукции и уменьшить сроки разработки. По вопросам разработки можно связаться с нами по e-mail или любому другому удобному вам виду связи которые перечислины в разделе «Контакты».</p>";
+		rCon.aboutLabel = "<p>Наша развивающаяся компания занимается разработкой в следующих направлениях:<br><ul type=\"disc\"> <li>Разработка приложений<ul type=\"circle\"><li>Бизнес приложения</li><li>Веб приложения</li><li>Мобильные приложения</li><li>Параллельные приложения</li><li>Приложения в научной сфере</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Веб разработка<ul type=\"circle\"><li>Сайты-визитки</li><li>Интернет порталы</li><li>Интернет магазины</li><li>Корпоративные сайты</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Обслуживание и продвижение сайтов<ul type=\"circle\"><li>SEO</li><li>SMO</li><li>Яндекс.Директ</li><li>Google AdWords</li><li>и др</li></ul></li></ul><ul type=\"disc\"><li>Абонентское обслуживание организаций<ul type=\"circle\"><li>Удаленное министрирование</li><li>Выездное администрирование</li><li>Проектирование и реализация сети</li><li>Подбор оборудования</li><li>и др</li></ul></li></ul><br>Проекты выполненные в рамках нашей компании можно найти в разделе «<a href=\"http://horosoft.org#projects\">Наши проекты</a>»</p><p>Компания имеет постоянно пополняющийся штат опытных сотрудников, каждый из которых стремится к развитию в данной сфере. Проекты и навыки наших сотрудников можно найти в <a href=\"http://horosoft.org/#developers\">соответствующем</a> разделе.</p><p>Применение индивидуального подхода к проектам позволяет нам улучшить качество производимой продукции и уменьшить сроки разработки. По вопросам разработки можно связаться с нами по e-mail или любому другому удобному вам виду связи которые перечислены в разделе «<a href=\"http://horosoft.org/#contacts\">Контакты<a/>».</p>";
 		eCon.aboutLabel = "<p>Our company can offer you high quality development service, such as:<br><ul type=\"disc\"><li>Software development<ul type=\"circle\"><li>Business software</li><li>Web applications</li><li>Mobile applications</li><li>Parallel applications</li><li>Scientific applications</li><li>etc</li></ul></li></ul><ul type=\"disc\"><li>Web<ul type=\"circle\"><li>Promo websites</li><li>Internet portals</li><li>Internet shops</li><li>Corporate websites</li><li>etc</li></ul></li></ul><ul type=\"disc\"> <li>Website promotion and maintenance<ul type=\"circle\"><li>SEO</li><li>SMO</li><li>Yandex.Direct</li><li>Google AdWords</li><li>etc</li></ul></li></ul><ul type=\"disc\"> <li>Remote support outsource<ul type=\"circle\"><li>Windows Servers</li><li>*nix servers</li><li>VOIP servers</li><li>Mail Servers</li><li>etc</li></ul></li></ul><br>You can find projects made by our company under the «Projects» tab</p><p>Our company has growing number of experienced employees. Each of them makes progress in his skills every day and every project he works on. You can find list of s kills and  third-party procjects of our employees under the «Developers» tab.</p><p>We use individual approach to every project. And it allows us to increase quality and decrease time spent on project development. Feel free to contact us with any question. You can find email and other contacts on the «Contacts» tab.</p>";
 		//rCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Корпоративный сайт для компании поставщика кабельного оборудования<br>&nbsp;&nbsp;&nbsp;&nbsp;ООО «Адвател»</p> &nbsp;&nbsp;&nbsp;&nbsp;Включает в себя:<ul><li>Каталог продукции</li><li>Новости</li></ul>";
 		//eCon.projectLabelAtel = "<p>&nbsp;&nbsp;&nbsp;&nbsp;Corporate website for novosibirsk cable company<br>&nbsp;&nbsp;&nbsp;&nbsp;«Advatel» LLC</p> &nbsp;&nbsp;&nbsp;&nbsp;Includes:<ul><li>Catalog</li><li>News</li></ul>";
@@ -111,8 +111,8 @@ public class HorsiteApplication extends Application {
 			
 	
 		eCon.cvLabel = "Page under conctruction";
-		rCon.contactsLabel = "<p><b>Компания \"Хорософт\"</b><br>Россия, г. Новосибирск</p><p><b>По всем вопросам можно обращаться:</b><br>e-mail: info@horosoft.org</p><p><b>По вопросам разработки приложений:</b><br>e-mail: nasonov.vladimir@horosoft.org<br>icq: 268655093<br>Телефон: +79139234617<br>Насонов Владимир Владимирович</p><p><b>По вопросам веб разработки, обслуживания сайтов и администрирования организаций:</b><br>e-mail: nikolaev.anton@horosoft.org<br>icq: 330153628<br>Телефон: +79137974240<br>Николаев Антон Павлович</p>";
-		eCon.contactsLabel = "<p><b>\"Horosoft\" Company</b><br>Russia, Novosibirsk</p><p><b>If you have any questions, comments, or suggestions please contact us:</b><br>e-mail: info@horosoft.org</p><p><b>Software development:</b><br>e-mail: nasonov.vladimir@horosoft.org<br>icq: 268655093<br>Phone: +79139234617<br>Vladimir Nasonov</p><p><b>Web development, SEO and Remote administration outsource:</b><br>e-mail: nikolaev.anton@horosoft.org<br>icq: 330153628<br>Phone: +79137974240<br>Anton Nikolaev</p>";
+		rCon.contactsLabel = "<p><b>Компания \"Хорософт\"</b><br>Россия, г. Новосибирск</p><p><b>По всем вопросам можно обращаться:</b><br>e-mail: <a href=\"mailto:info@horosoft.org\">info@horosoft.org</a></p><p><b>По вопросам разработки приложений:</b><br>e-mail: <a href=\"nasonov.vladimir@horosoft.org\">nasonov.vladimir@horosoft.org</a><br>icq: 268655093<br>Телефон: +79139234617<br>Насонов Владимир Владимирович</p><p><b>По вопросам веб разработки, обслуживания сайтов и администрирования организаций:</b><br>e-mail: <a href=\"mailto:nikolaev.anton@horosoft.org\">nikolaev.anton@horosoft.org</a><br>icq: 330153628<br>Телефон: +79137974240<br>Николаев Антон Павлович</p>";
+		eCon.contactsLabel = "<p><b>\"Horosoft\" Company</b><br>Russia, Novosibirsk</p><p><b>If you have any questions, comments, or suggestions please contact us:</b><br>e-mail: <a href=\"info@horosoft.org\">info@horosoft.org</a></p><p><b>Software development:</b><br>e-mail: <a href=\"nasonov.vladimir@horosoft.org\">nasonov.vladimir@horosoft.org</a><br>icq: 268655093<br>Phone: +79139234617<br>Vladimir Nasonov</p><p><b>Web development, SEO and Remote administration outsource:</b><br>e-mail: <a href=\"mailto:nikolaev.anton@horosoft.org\">nikolaev.anton@horosoft.org</a><br>icq: 330153628<br>Phone: +79137974240<br>Anton Nikolaev</p>";
 		
 		con = rCon;
 	}
@@ -385,7 +385,7 @@ public class HorsiteApplication extends Application {
 		public void buttonClick(ClickEvent event) {
 		contentPanel.removeAllComponents();
 		contentPanel.addComponent(aboutLbl);
-		pages.setFragment("!key=about");
+		pages.setFragment("about");
 		}
 		});
 	menuBar.addComponent(aboutMenuBtn);
@@ -397,7 +397,7 @@ public class HorsiteApplication extends Application {
 		public void buttonClick(ClickEvent event) {
 		contentPanel.removeAllComponents();
 		contentPanel.addComponent(prjLayout);
-		pages.setFragment("!key=projects");
+		pages.setFragment("projects");
 		}
 		});
 	menuBar.addComponent(projectMenuBtn);
@@ -409,7 +409,7 @@ public class HorsiteApplication extends Application {
 		public void buttonClick(ClickEvent event) {
 		contentPanel.removeAllComponents();
 		contentPanel.addComponent(cvLbl);
-		pages.setFragment("!key=developers");
+		pages.setFragment("developers");
 		}
 		});
 	menuBar.addComponent(cvMenuBtn);
@@ -421,7 +421,7 @@ public class HorsiteApplication extends Application {
 		public void buttonClick(ClickEvent event) {
 		contentPanel.removeAllComponents();
 		contentPanel.addComponent(contactsLbl);
-		pages.setFragment("!key=contacts");
+		pages.setFragment("contacts");
 		}
 		});
 	menuBar.addComponent(contactsMenuBtn);
@@ -434,13 +434,13 @@ public class HorsiteApplication extends Application {
 	    public void fragmentChanged(FragmentChangedEvent source) {
 	        String fragment =
 	                  source.getUriFragmentUtility().getFragment();
-	        if (fragment.equals("!key=about")||fragment.equals("!key=projects")||fragment.equals("!key=developers")||fragment.equals("!key=contacts"))
+	        if (fragment.equals("about")||fragment.equals("projects")||fragment.equals("developers")||fragment.equals("contacts"))
 	        {
 	            contentPanel.removeAllComponents();
-	            if (fragment.equals("!key=contacts")) contentPanel.addComponent(contactsLbl);
-	            if (fragment.equals("!key=developers")) contentPanel.addComponent(cvLbl);
-	            if (fragment.equals("!key=projects")) contentPanel.addComponent(prjLayout);
-	            if (fragment.equals("!key=about")) contentPanel.addComponent(aboutLbl);
+	            if (fragment.equals("contacts")) contentPanel.addComponent(contactsLbl);
+	            if (fragment.equals("developers")) contentPanel.addComponent(cvLbl);
+	            if (fragment.equals("projects")) contentPanel.addComponent(prjLayout);
+	            if (fragment.equals("about")) contentPanel.addComponent(aboutLbl);
 	        }
 	    }
 	});
